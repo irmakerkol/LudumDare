@@ -12,6 +12,7 @@ public class TypingGame : MonoBehaviour
     private bool gameStarted;
     private bool gameOver;
     private string currentText;
+    [SerializeField] GameObject dataBeingHarvested;
 
     // Start the game
     public void StartGame()
@@ -30,6 +31,7 @@ public class TypingGame : MonoBehaviour
         gameStarted = false;
         timer.StopTimer();
         HackButton.Fire_onSetActivity(true);
+        dataBeingHarvested.SetActive(false);
         this.gameObject.SetActive(false);
     }
 
@@ -38,6 +40,7 @@ public class TypingGame : MonoBehaviour
         gameStarted = false;
         timer.StopTimer();
         HackButton.Fire_onSetActivity(false);
+        dataBeingHarvested.SetActive(true);
         this.gameObject.SetActive(false);
     }
 
