@@ -9,7 +9,6 @@ public class TypingGame : MonoBehaviour
     public InputField inputField;
     public TextDisplay textDisplay;
     public Timer timer;
-
     private bool gameStarted;
     private bool gameOver;
     private string currentText;
@@ -26,10 +25,16 @@ public class TypingGame : MonoBehaviour
     }
 
     // Stop the game
-    public void StopGame()
+    public void LooseStopGame()
     {
         gameStarted = false;
-        //inputField.gameObject.SetActive(false);
+        timer.StopTimer();
+        this.gameObject.SetActive(false);
+    }
+
+    public void WinStopGame()
+    {
+        gameStarted = false;
         timer.StopTimer();
         this.gameObject.SetActive(false);
     }
@@ -49,14 +54,14 @@ public class TypingGame : MonoBehaviour
             if (inputField.text == currentText)
             {
                 gameOver = true;
-                StopGame();
+                WinStopGame();
             }
 
             // Check if the timer has run out
             if (timer.IsTimeUp())
             {
                 gameOver = true;
-                StopGame();
+                LooseStopGame();
             }
         }
     }
