@@ -3,20 +3,21 @@ using System.Collections;
 
 public class ChangeCursor : MonoBehaviour
 {
-    private SpriteRenderer sprRenderer;
+    //private SpriteRenderer sprRenderer;
     public float shrinkDuration = 0.5f; // Duration of the grow animation
     public Vector2 growAmount; // Amount by which the cursor grows
+    private Vector2 originalSize; // Original size of the cursor
 
     public bool isClickable = true; // Flag to keep track of whether the cursor is clickable
 
     private void Awake()
     {
-        sprRenderer = GetComponent<SpriteRenderer>();
+        //sprRenderer = GetComponent<SpriteRenderer>();
     }
     private void Start()
     {
         Cursor.visible = false;
-        growAmount = new Vector2(1.5f, 1.5f);
+        originalSize = transform.localScale;
     }
 
     void Update()
@@ -27,7 +28,8 @@ public class ChangeCursor : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && isClickable)
         {
 
-            sprRenderer.size += growAmount;
+            //sprRenderer.size += growAmount;
+            transform.localScale += (Vector3)growAmount;
 
             StartCoroutine(ShrinkCursor());
             isClickable = false;
@@ -40,12 +42,12 @@ public class ChangeCursor : MonoBehaviour
         float elapsedTime = 0.0f;
         while (elapsedTime < shrinkDuration)
         {
-            sprRenderer.size = Vector3.Lerp(sprRenderer.size, Vector2.one, elapsedTime / shrinkDuration);
+            transform.localScale = Vector3.Lerp(transform.localScale, originalSize, elapsedTime / shrinkDuration);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
-        sprRenderer.size = Vector2.one;
+        transform.localScale = originalSize;
         isClickable = true;
     }
 }
