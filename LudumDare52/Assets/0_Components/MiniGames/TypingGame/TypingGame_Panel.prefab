@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8636401995994469789}
   - component: {fileID: 8636401995994469788}
   - component: {fileID: 8636401995994469791}
-  - component: {fileID: 8636401995994469786}
+  - component: {fileID: 7216817270863038496}
   m_Layer: 5
   m_Name: InputField (TMP)
   m_TagString: Untagged
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
---- !u!114 &8636401995994469786
+--- !u!114 &7216817270863038496
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8636401995994469777}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d7af375cc9954a29b7b6cfa17acd4d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d5d892c1f6d84fe18f1228f662ca8d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8636401996141778524
@@ -556,7 +556,7 @@ GameObject:
   - component: {fileID: 8636401996804800901}
   - component: {fileID: 8636401996804800899}
   - component: {fileID: 8636401996804800898}
-  - component: {fileID: 8636401996804800896}
+  - component: {fileID: 800364021071798264}
   m_Layer: 5
   m_Name: TextDisplay
   m_TagString: Untagged
@@ -681,7 +681,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &8636401996804800896
+--- !u!114 &800364021071798264
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -690,7 +690,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8636401996804800900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d61ad9eee432e4e928fd1b16bbc00b7d, type: 3}
+  m_Script: {fileID: 11500000, guid: 57dc27de0db814dec9ed4770058a1ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 8636401996804800898}
@@ -705,7 +705,7 @@ GameObject:
   - component: {fileID: 8636401996837357363}
   - component: {fileID: 8636401996837357361}
   - component: {fileID: 8636401996837357360}
-  - component: {fileID: 8636401996837357374}
+  - component: {fileID: 4434507103173501161}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -830,7 +830,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &8636401996837357374
+--- !u!114 &4434507103173501161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8636401996837357362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3e9c0de5e71f49daaa0a4aed54d722d, type: 3}
+  m_Script: {fileID: 11500000, guid: 23791ff1bd1ba4202b96cbb0f365d3dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 8636401996837357360}
@@ -907,7 +907,7 @@ GameObject:
   - component: {fileID: 8636401997485332725}
   - component: {fileID: 8636401997485332723}
   - component: {fileID: 8636401997485332722}
-  - component: {fileID: 8636401997485332720}
+  - component: {fileID: 1500016877519792309}
   m_Layer: 5
   m_Name: TypingGame_Panel
   m_TagString: Untagged
@@ -975,7 +975,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8636401997485332720
+--- !u!114 &1500016877519792309
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -984,15 +984,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8636401997485332724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d9433f9e0294f65b6f6f7397e5b184, type: 3}
+  m_Script: {fileID: 11500000, guid: cbbc15843620749d98812f643b311607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textsToType:
-  - Yaz lan
-  - HAHAHAHA
-  - Hadi bakalim
-  - Cal keke
+  - naber
+  - iyi sen
+  - ben de iyi
   timeLimit: 10
-  inputField: {fileID: 8636401995994469786}
-  textDisplay: {fileID: 8636401996804800896}
-  timer: {fileID: 8636401996837357374}
+  inputField: {fileID: 7216817270863038496}
+  textDisplay: {fileID: 800364021071798264}
+  timer: {fileID: 4434507103173501161}
