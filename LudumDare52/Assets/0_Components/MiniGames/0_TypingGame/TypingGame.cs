@@ -29,6 +29,7 @@ public class TypingGame : MonoBehaviour
     {
         gameStarted = false;
         timer.StopTimer();
+        HackButton.Fire_onSetActivity(true);
         this.gameObject.SetActive(false);
     }
 
@@ -36,6 +37,7 @@ public class TypingGame : MonoBehaviour
     {
         gameStarted = false;
         timer.StopTimer();
+        HackButton.Fire_onSetActivity(false);
         this.gameObject.SetActive(false);
     }
 
