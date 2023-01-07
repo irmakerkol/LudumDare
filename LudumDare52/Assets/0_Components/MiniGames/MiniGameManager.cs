@@ -28,7 +28,7 @@ public class MiniGameManager : MonoBehaviour
 
     public void StopTypingGame()
     {
-        typingGame.StopGame();
+        typingGame.WinStopGame();
         typingGamePanel.SetActive(value: false);
     }
 
