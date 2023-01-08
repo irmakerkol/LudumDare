@@ -3,40 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TypingGame : MonoBehaviour
+public class TappingGame : MonoBehaviour
 {
-    public string[] textsToType;
+    public int tapCount;
     public float timeLimit;
-    public TextDisplay textDisplay;
     public Timer timer;
+
     private bool gameStarted;
     private bool gameOver;
-    private string currentText;
+    private int currentTaps;
 
     [SerializeField] GameObject dataBeingHarvested;
     [SerializeField] GameObject failedImage;
-    [SerializeField] TMPro.TMP_InputField inputField;
 
-
-    // Start the game
+    [SerializeField] Sprite[] sprites;
+    
     public void StartGame()
     {
-        failedImage.SetActive(false);
-
         gameStarted = true;
         gameOver = false;
-        inputField.text = "";
-        currentText = SelectRandomText();
-        textDisplay.SetText(currentText);
+        currentTaps = 0;
+        this.gameObject.GetComponent<Image>().sprite = sprites[0];
         timer.StartTimer(timeLimit);
     }
 
     // Stop the game
+    public void WinStopGame()
+    {
+        gameStarted = false;
+        timer.StopTimer();
+        dataBeingHarvested.SetActive(true);
+        this.gameObject.SetActive(false);
+    }
+    
     public void LooseStopGame()
     {
         gameStarted = false;
         timer.StopTimer();
-        HackButton.Fire_onSetActivity(true);
         dataBeingHarvested.SetActive(false);
         failedImage.SetActive(true);
         
@@ -50,16 +53,6 @@ public class TypingGame : MonoBehaviour
         this.gameObject.SetActive(false);
     }
 
-    public void WinStopGame()
-    {
-        gameStarted = false;
-        timer.StopTimer();
-        HackButton.Fire_onSetActivity(false);
-        dataBeingHarvested.SetActive(true);
-        DataBeingHarvested.instance.harvestedDataCounter ++;
-        DataBeingHarvested.instance.SetText();
-        this.gameObject.SetActive(false);
-    }
 
     // Check if the game is over
     public bool IsComplete()
@@ -72,8 +65,8 @@ public class TypingGame : MonoBehaviour
     {
         if (gameStarted && !gameOver)
         {
-            // Check if the player's input is correct
-            if (inputField.text == currentText)
+            // Check if the player has reached the tap count
+            if (currentTaps >= tapCount)
             {
                 gameOver = true;
                 WinStopGame();
@@ -85,13 +78,20 @@ public class TypingGame : MonoBehaviour
                 gameOver = true;
                 LooseStopGame();
             }
+            
+             // Check if the "CMD" key (on Mac) or the "Left Control" key (on Windows) and the "C" key are pressed together
+            if ((Input.GetKey(KeyCode.LeftCommand) || Input.GetKey(KeyCode.LeftControl)) && Input.GetKeyDown(KeyCode.C))
+            {
+                this.gameObject.GetComponent<Image>().sprite = sprites[1];
+                currentTaps++;
+            }
+
+            if ((Input.GetKey(KeyCode.LeftCommand) || Input.GetKey(KeyCode.LeftControl)) && Input.GetKeyUp(KeyCode.C))
+            {
+                this.gameObject.GetComponent<Image>().sprite = sprites[0];
+                currentTaps++;
+            }
         }
     }
 
-    // Select a random text from the textsToType array
-    private string SelectRandomText()
-    {
-        int index = Random.Range(0, textsToType.Length);
-        return textsToType[index];
-    }
 }
