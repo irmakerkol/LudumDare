@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1903271463}
   - component: {fileID: 1903271462}
   - component: {fileID: 1903271461}
+  - component: {fileID: 723976123}
   m_Layer: 5
   m_Name: HackButton
   m_TagString: Untagged
@@ -36,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -391, y: 121}
+  m_AnchoredPosition: {x: 213, y: -101}
   m_SizeDelta: {x: 194, y: 78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1903271463
@@ -133,6 +134,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &723976123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903271459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0319f54497a43d7977b45a2eb1be04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1165004368667665463
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,10 +360,10 @@ RectTransform:
   m_Father: {fileID: 1165004368679101105}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 132, y: -23.34}
+  m_SizeDelta: {x: 108, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1165004369046161490
 CanvasRenderer:
@@ -499,10 +512,10 @@ RectTransform:
   m_Father: {fileID: 1165004368679101105}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 44, y: -23.34}
+  m_SizeDelta: {x: 48, y: 38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1165004369937974940
 CanvasRenderer:
@@ -577,7 +590,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -29.499973, y: -27.500015}
+  m_AnchoredPosition: {x: -29.49997, y: -27.500015}
   m_SizeDelta: {x: 59, y: 54}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &1165004369939540218
@@ -786,7 +799,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1165004370378347093
 RectTransform:
   m_ObjectHideFlags: 0

@@ -4,16 +4,26 @@ using UnityEngine;
 
 public class Explanation : MonoBehaviour
 {
-    [SerializeField] float timeToDestroy;
+    public float timeToDestroy;
 
     private void Start()
     {
-        // Destroy the GameObject after the specified time
-        Destroy(gameObject, timeToDestroy);
+        // Start the coroutine to destroy the GameObject after the specified time
+        StartCoroutine(DestroyAfterDelay(timeToDestroy));
+    }
+
+    // Coroutine that destroys the GameObject after a delay
+    private IEnumerator DestroyAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        LevelManager.instance.StartLevel1();
+        Destroy(gameObject);
     }
 
     public void onESC()
     {
+        LevelManager.instance.StartLevel1();
         Destroy(gameObject);
     }
 }
