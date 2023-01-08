@@ -7,12 +7,14 @@ public class ChangeCursor : MonoBehaviour
     public float shrinkDuration = 0.5f; // Duration of the grow animation
     public Vector2 growAmount; // Amount by which the cursor grows
     private Vector2 originalSize; // Original size of the cursor
+    private AudioSource audioSource; // Reference to the AudioSource component
+    public AudioClip shootSound; // Sound to play when the cursor is clicked
 
     public bool isClickable = true; // Flag to keep track of whether the cursor is clickable
 
     private void Awake()
     {
-        //sprRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>(); // Get a reference to the AudioSource component
     }
     private void Start()
     {
@@ -27,7 +29,8 @@ public class ChangeCursor : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && isClickable)
         {
-
+            // play the audioclip
+            audioSource.PlayOneShot(shootSound);
             //sprRenderer.size += growAmount;
             transform.localScale += (Vector3)growAmount;
 

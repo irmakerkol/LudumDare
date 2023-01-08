@@ -125,8 +125,8 @@ MonoBehaviour:
       autoControlLength: 0.3
       boundsUpToDate: 0
       bounds:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 2, y: 0.14433756, z: 0}
+        m_Center: {x: 0.47873974, y: -0.093925714, z: 0}
+        m_Extent: {x: 6.1370983, y: 4.611024, z: 0}
       perAnchorNormalsAngle:
       - 0
       - 0
@@ -168,7 +168,7 @@ MonoBehaviour:
     showNormalsInVertexMode: 0
     showBezierPathInVertexMode: 0
     showDisplayOptions: 0
-    showPathOptions: 1
+    showPathOptions: 0
     showVertexPathDisplayOptions: 0
     showVertexPathOptions: 1
     showNormals: 0
