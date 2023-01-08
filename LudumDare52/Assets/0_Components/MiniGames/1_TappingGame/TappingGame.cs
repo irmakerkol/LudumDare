@@ -16,12 +16,14 @@ public class TappingGame : MonoBehaviour
     [SerializeField] GameObject dataBeingHarvested;
     [SerializeField] GameObject failedImage;
 
-    // Start the game
+    [SerializeField] Sprite[] sprites;
+    
     public void StartGame()
     {
         gameStarted = true;
         gameOver = false;
         currentTaps = 0;
+        this.gameObject.GetComponent<Image>().sprite = sprites[0];
         timer.StartTimer(timeLimit);
     }
 
@@ -79,7 +81,16 @@ public class TappingGame : MonoBehaviour
             
              // Check if the "CMD" key (on Mac) or the "Left Control" key (on Windows) and the "C" key are pressed together
             if ((Input.GetKey(KeyCode.LeftCommand) || Input.GetKey(KeyCode.LeftControl)) && Input.GetKeyDown(KeyCode.C))
+            {
+                this.gameObject.GetComponent<Image>().sprite = sprites[1];
                 currentTaps++;
+            }
+
+            if ((Input.GetKey(KeyCode.LeftCommand) || Input.GetKey(KeyCode.LeftControl)) && Input.GetKeyUp(KeyCode.C))
+            {
+                this.gameObject.GetComponent<Image>().sprite = sprites[0];
+                currentTaps++;
+            }
         }
     }
 

@@ -15,6 +15,11 @@ public class MiniGameManager : MonoBehaviour
         else
             Destroy(gameObject);
     }
+    
+    private void Start() 
+    {
+        StartTappingGame();
+    }
 
     //Typing Game
     public TypingGame typingGame;
