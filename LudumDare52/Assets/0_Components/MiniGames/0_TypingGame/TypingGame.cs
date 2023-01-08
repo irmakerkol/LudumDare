@@ -57,7 +57,7 @@ public class TypingGame : MonoBehaviour
         HackButton.Fire_onSetActivity(false);
         dataBeingHarvested.SetActive(true);
         DataBeingHarvested.instance.harvestedDataCounter ++;
-        DataBeingHarvested.instance.SetText();
+        DataBeingHarvested.instance.IncreaseCount(5);
         this.gameObject.SetActive(false);
     }
 
