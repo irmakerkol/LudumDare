@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 5892426788519678628}
   - component: {fileID: 5892426788519678631}
   m_Layer: 5
-  m_Name: Progression
+  m_Name: DataBeingHarvested
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5892426788519678630
 RectTransform:
   m_ObjectHideFlags: 0

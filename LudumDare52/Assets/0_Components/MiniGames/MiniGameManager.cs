@@ -26,12 +26,6 @@ public class MiniGameManager : MonoBehaviour
         typingGame.StartGame();
     }
 
-    public void StopTypingGame()
-    {
-        typingGame.WinStopGame();
-        typingGamePanel.SetActive(value: false);
-    }
-
     // Check if the TypingGame is complete
     public bool IsTypingGameComplete()
     {
