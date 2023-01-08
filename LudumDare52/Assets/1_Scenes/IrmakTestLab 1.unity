@@ -553,6 +553,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DataBeingHarvested
       objectReference: {fileID: 0}
+    - target: {fileID: 5892426788519678625, guid: 7738364670d624f098ebaaebf84ab2ce, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5892426788519678630, guid: 7738364670d624f098ebaaebf84ab2ce, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -655,9 +659,61 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1860884787}
+    - target: {fileID: 1165004369046161488, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165004369046161488, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165004369046161488, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165004369046161488, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165004369046161488, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165004369046161488, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165004369937974938, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165004369937974938, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165004369937974938, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165004369937974938, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165004369937974938, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165004369937974938, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1165004370378347090, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
       propertyPath: m_Name
       value: Amazon_Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165004370378347090, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1165004370378347093, guid: 1d27f14615a964729ad7a68276fb7b9b, type: 3}
       propertyPath: m_Pivot.x
@@ -763,7 +819,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8545589592235511404, guid: f9f62e17174cb435c92e5f4cf8bc027e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8545589592235511405, guid: f9f62e17174cb435c92e5f4cf8bc027e, type: 3}
       propertyPath: m_Pivot.x
@@ -939,6 +995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TypingGame_Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 8636401997485332724, guid: 56aad469a5a50423eb98ec5dee0aceb1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8636401997485332725, guid: 56aad469a5a50423eb98ec5dee0aceb1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -969,11 +1029,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8636401997485332725, guid: 56aad469a5a50423eb98ec5dee0aceb1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 900
+      value: 764
       objectReference: {fileID: 0}
     - target: {fileID: 8636401997485332725, guid: 56aad469a5a50423eb98ec5dee0aceb1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 500
+      value: 516
       objectReference: {fileID: 0}
     - target: {fileID: 8636401997485332725, guid: 56aad469a5a50423eb98ec5dee0aceb1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1087,8 +1147,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typingGame: {fileID: 1484471227}
   typingGamePanel: {fileID: 1484471226}
-  buttonTappingGame: {fileID: 1886302688}
-  buttonTappingGamePanel: {fileID: 1886302687}
+  tappingGame: {fileID: 1886302688}
+  tappingGamePanel: {fileID: 1886302687}
 --- !u!4 &1860884788
 Transform:
   m_ObjectHideFlags: 0
@@ -1111,6 +1171,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 234363724}
     m_Modifications:
+    - target: {fileID: 1369009451421360206, guid: 0c70f15fb9efd4eafa79d8d0f5843d42, type: 3}
+      propertyPath: dataBeingHarvested
+      value: 
+      objectReference: {fileID: 1756777327}
     - target: {fileID: 6823693290990674030, guid: 0c70f15fb9efd4eafa79d8d0f5843d42, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1141,11 +1205,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6823693290990674030, guid: 0c70f15fb9efd4eafa79d8d0f5843d42, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 900
+      value: 764
       objectReference: {fileID: 0}
     - target: {fileID: 6823693290990674030, guid: 0c70f15fb9efd4eafa79d8d0f5843d42, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 500
+      value: 516
       objectReference: {fileID: 0}
     - target: {fileID: 6823693290990674030, guid: 0c70f15fb9efd4eafa79d8d0f5843d42, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1181,7 +1245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6823693290990674030, guid: 0c70f15fb9efd4eafa79d8d0f5843d42, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -67
       objectReference: {fileID: 0}
     - target: {fileID: 6823693290990674030, guid: 0c70f15fb9efd4eafa79d8d0f5843d42, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1197,7 +1261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6823693290990674031, guid: 0c70f15fb9efd4eafa79d8d0f5843d42, type: 3}
       propertyPath: m_Name
-      value: ButtonTappingGame_Panel
+      value: TappingGame_Panel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c70f15fb9efd4eafa79d8d0f5843d42, type: 3}
