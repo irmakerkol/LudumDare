@@ -20,8 +20,26 @@ public class DataBeingHarvested : MonoBehaviour
     [SerializeField] TMP_Text counterText;
     public int harvestedDataCounter = 0;
 
-    public void SetText()
+    public void IncreaseCount(int increaseAmount)
     {
-        counterText.text = "" + harvestedDataCounter;
+        StartCoroutine(routine: ChangeText(increaseAmount));
     }
+
+    // Coroutine that changes the text every 2 seconds for count times
+    private IEnumerator ChangeText(int count)
+    {
+        // Repeat count times
+        for (int i = 0; i < count; i++)
+        {
+            // Wait 2 seconds
+            yield return new WaitForSeconds(2.0f);
+
+            // Change the text
+            harvestedDataCounter ++;
+            counterText.text = harvestedDataCounter.ToString();
+        }
+
+        
+    }
+
 }
