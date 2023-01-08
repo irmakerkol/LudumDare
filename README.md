@@ -32,8 +32,6 @@ Thanks to the following people who have contributed to this project:
 * [Fatma Sena Genç](https://github.com/fatmasenagenc) 💻
 
 ## License
-<!--- If you're not sure which open license to use see https://choosealicense.com/--->
-Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 This work is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
