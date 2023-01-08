@@ -16,11 +16,6 @@ public class MiniGameManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    private void Start()
-    {
-        StartTappingGame();
-    }
-
     //Typing Game
     public TypingGame typingGame;
     [SerializeField] GameObject typingGamePanel;
