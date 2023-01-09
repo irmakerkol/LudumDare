@@ -35,9 +35,9 @@ RectTransform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.75, y: 0.08}
-  m_AnchorMax: {x: 0.95, y: 0.17}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.75, y: 0.08}
+  m_AnchoredPosition: {x: 80, y: 38}
+  m_SizeDelta: {x: 134.15, y: 65.397}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &87194130
 CanvasRenderer:
@@ -67,8 +67,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d5c0fea04c30419439e204218923627c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -415,11 +415,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textParts:
-  - The given text input is written to the screen at random times in the interval
-    specified here If the next button is pressed before the text is completed, it
-    will be completed automatically
-  - If you are on the last text page, the next button takes you to the game scene.
-    The close button above works the same way anywhere in the intro scene.
+  - Hii!! Welcome to my OurPipe video :)
+  - Today I will Show you how to be a Data harvester!
+  - As you know - to make the AI happy and human life going around - we have to feed
+    it a considarable amount of data!
+  - To be a data harvester you have to hack the sites people visit often and be sure
+    to be fast!
+  - Hacking the sites will be self explanatory! Trust me!
+  - And with that you will be a data harvester who will make the AI happy and you
+    wont die haha :))
+  - Go on - try it!
   minTypeSpeed: 0.05
   maxTypeSpeed: 1
 --- !u!1 &8545589592235511404

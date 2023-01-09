@@ -7,7 +7,11 @@ public class KillBug : MonoBehaviour
     public string targetTag;
     private AudioSource audioSource;
     public AudioClip deathSound;
+    [SerializeField] GameObject dataBeingHarvested;
+    [SerializeField] GameObject gameCanvas;
+    private int increaseScore = 5;
     
+
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -26,7 +30,19 @@ public class KillBug : MonoBehaviour
 
                 hit.collider.gameObject.GetComponent<Animator>().Play("deadBug");
                 hit.collider.gameObject.GetComponent<FollowBezierCurve>().enabled = false;
+                Invoke("WinStopGame", 2.0f);
+
             }
         }
+    }
+
+    public void WinStopGame()
+    {
+        Cursor.visible = true;
+        HackButton.Fire_onSetActivity(false);
+        dataBeingHarvested.SetActive(true);
+        DataBeingHarvested.instance.harvestedDataCounter++;
+        DataBeingHarvested.instance.IncreaseCount(increaseScore);
+        gameCanvas.SetActive(false);
     }
 }

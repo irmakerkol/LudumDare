@@ -1,6 +1,6 @@
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class TypingEffect : MonoBehaviour
 {
@@ -62,7 +62,8 @@ public class TypingEffect : MonoBehaviour
         {
             // Start the animation
             //GetComponent<Animation>().Play();
-            //trials scene al
+            //gameplay scene al
+            SceneManager.LoadScene("Gameplay");
             return;
         }
 
@@ -87,7 +88,8 @@ public class TypingEffect : MonoBehaviour
     public void onESC()
     {
         //LevelManager.instance.StartLevel1();
-        //trials scene al
+        //gameplay scene al
+        SceneManager.LoadScene("Gameplay");
         Destroy(gameObject);
     }
 }

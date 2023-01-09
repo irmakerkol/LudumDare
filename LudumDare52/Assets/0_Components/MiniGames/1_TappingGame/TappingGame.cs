@@ -60,7 +60,7 @@ public class TappingGame : MonoBehaviour
 
     private IEnumerator SetDisactiveAfterDelay( )
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
 
         this.gameObject.SetActive(false);
     }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DataBeingHarvested : MonoBehaviour
 {
@@ -38,7 +39,7 @@ public class DataBeingHarvested : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             // Wait 2 seconds
-            yield return new WaitForSeconds(2.0f);
+            yield return new WaitForSeconds(0.5f);
 
             // Change the text
             harvestedDataCounter ++;
@@ -78,6 +79,7 @@ public class DataBeingHarvested : MonoBehaviour
             case 8:
                 //finish game
                 Debug.Log("oyunu bitirdin helal");
+                SceneManager.LoadScene("EndScene");
                 break;
         }
         gameObject.SetActive(false);

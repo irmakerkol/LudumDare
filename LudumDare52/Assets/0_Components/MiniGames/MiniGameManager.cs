@@ -86,5 +86,12 @@ public class MiniGameManager : MonoBehaviour
         osuGame3.Init();
     }
 
+    [SerializeField] GameObject bugGame;
+
+    // Start the minigame
+    public void StartBugGame()
+    {
+        bugGame.SetActive(value: true);
+    }
 }
 
