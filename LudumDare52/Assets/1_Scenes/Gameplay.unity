@@ -1029,22 +1029,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 234363724}
     m_Modifications:
-    - target: {fileID: 86426346, guid: 7738364670d624f098ebaaebf84ab2ce, type: 3}
-      propertyPath: m_fontSize
-      value: 50.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 86426346, guid: 7738364670d624f098ebaaebf84ab2ce, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 50.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 86426346, guid: 7738364670d624f098ebaaebf84ab2ce, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -1051754103156868581, guid: 807d0210f1596b540b71ccfc7222169d, type: 2}
-    - target: {fileID: 86426346, guid: 7738364670d624f098ebaaebf84ab2ce, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5892426788519678625, guid: 7738364670d624f098ebaaebf84ab2ce, type: 3}
       propertyPath: m_Name
       value: DataBeingHarvested
@@ -1529,29 +1513,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 234363724}
     m_Modifications:
     - target: {fileID: 1500016877519792309, guid: 56aad469a5a50423eb98ec5dee0aceb1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1500016877519792309, guid: 56aad469a5a50423eb98ec5dee0aceb1, type: 3}
       propertyPath: dataBeingHarvested
       value: 
       objectReference: {fileID: 1756777327}
-    - target: {fileID: 8636401995994469791, guid: 56aad469a5a50423eb98ec5dee0aceb1, type: 3}
-      propertyPath: m_GlobalPointSize
-      value: 27.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8636401996804800898, guid: 56aad469a5a50423eb98ec5dee0aceb1, type: 3}
-      propertyPath: m_fontSize
-      value: 50.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8636401996804800898, guid: 56aad469a5a50423eb98ec5dee0aceb1, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 807d0210f1596b540b71ccfc7222169d, type: 2}
-    - target: {fileID: 8636401996804800898, guid: 56aad469a5a50423eb98ec5dee0aceb1, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 50.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8636401996804800898, guid: 56aad469a5a50423eb98ec5dee0aceb1, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -1051754103156868581, guid: 807d0210f1596b540b71ccfc7222169d, type: 2}
     - target: {fileID: 8636401997485332724, guid: 56aad469a5a50423eb98ec5dee0aceb1, type: 3}
       propertyPath: m_Name
       value: TypingGame_Panel
@@ -1674,6 +1642,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8049176377039003316, guid: f6d90dfcd1ce0874196480883427941f, type: 3}
+      propertyPath: gameCanvas
+      value: 
+      objectReference: {fileID: 1499430578}
+    - target: {fileID: 8049176377039003316, guid: f6d90dfcd1ce0874196480883427941f, type: 3}
+      propertyPath: dataBeingHarvested
+      value: 
+      objectReference: {fileID: 1756777327}
+    - target: {fileID: 8049176377039003319, guid: f6d90dfcd1ce0874196480883427941f, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 8049176377430896842, guid: f6d90dfcd1ce0874196480883427941f, type: 3}
       propertyPath: m_Name
       value: HardBug_MiniGame_Canvas
@@ -1766,6 +1746,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8049176377430896847, guid: f6d90dfcd1ce0874196480883427941f, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6d90dfcd1ce0874196480883427941f, type: 3}
 --- !u!1 &1499430578 stripped
