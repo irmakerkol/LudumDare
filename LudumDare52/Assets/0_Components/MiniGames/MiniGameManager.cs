@@ -93,5 +93,13 @@ public class MiniGameManager : MonoBehaviour
     {
         bugGame.SetActive(value: true);
     }
+
+    [SerializeField] GameObject hardBugGame;
+
+    // Start the minigame
+    public void StartHardBugGame()
+    {
+        hardBugGame.SetActive(value: true);
+    }
 }
 

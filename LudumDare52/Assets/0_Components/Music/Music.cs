@@ -21,7 +21,7 @@ public class Music : MonoBehaviour
 
     private void Start()
     {
-        musicOnImage.gameObject.SetActive(true);
+        //musicOnImage.gameObject.SetActive(true);
     }
 
     public void ToggleMusic()
@@ -29,14 +29,14 @@ public class Music : MonoBehaviour
         if (audioSource.isPlaying)
         {
             audioSource.Stop();
-            musicOnImage.gameObject.SetActive(false);
-            musicOffImage.gameObject.SetActive(true);
+            //musicOnImage.gameObject.SetActive(false);
+            //musicOffImage.gameObject.SetActive(true);
         }
         else
         {
             audioSource.Play();
-            musicOffImage.gameObject.SetActive(false);
-            musicOnImage.gameObject.SetActive(true);
+            //musicOffImage.gameObject.SetActive(false);
+            //musicOnImage.gameObject.SetActive(true);
         }
     }
 
