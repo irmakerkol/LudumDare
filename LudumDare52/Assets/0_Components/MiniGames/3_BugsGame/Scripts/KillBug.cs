@@ -5,7 +5,6 @@ using UnityEngine;
 public class KillBug : MonoBehaviour
 {
     public string targetTag;
-    public Sprite deadSprite;
     private AudioSource audioSource;
     public AudioClip deathSound;
     
@@ -25,7 +24,7 @@ public class KillBug : MonoBehaviour
                 // play the audioclip
                 audioSource.PlayOneShot(deathSound);
 
-                hit.collider.gameObject.GetComponent<SpriteRenderer>().sprite = deadSprite;
+                hit.collider.gameObject.GetComponent<Animator>().Play("deadBug");
                 hit.collider.gameObject.GetComponent<FollowBezierCurve>().enabled = false;
             }
         }

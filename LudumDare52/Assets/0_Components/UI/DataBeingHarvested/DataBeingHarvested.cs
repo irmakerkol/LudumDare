@@ -5,6 +5,9 @@ using TMPro;
 
 public class DataBeingHarvested : MonoBehaviour
 {
+    private AudioSource audioSource;
+    
+    
     public static DataBeingHarvested instance { get; private set; }
     private void Awake()
     {
@@ -15,6 +18,8 @@ public class DataBeingHarvested : MonoBehaviour
         }
         else
             Destroy(gameObject);
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     [SerializeField] TMP_Text counterText;
@@ -37,6 +42,7 @@ public class DataBeingHarvested : MonoBehaviour
             // Change the text
             harvestedDataCounter ++;
             counterText.text = harvestedDataCounter.ToString();
+            audioSource.PlayOneShot(audioSource.clip);
         }
 
         
