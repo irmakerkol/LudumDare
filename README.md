@@ -7,20 +7,20 @@
 ![GitHub stars](https://img.shields.io/github/stars/ierkol18/LudumDare?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/ierkol18/LudumDare?style=social)
 
-**OUR GAME** is a HTML5/Windows game for [Ludum Dare #52](https://ldjam.com/events/ludum-dare/52) (January 2023). It was developed in 48 hours by a team of 4 people. The theme of the game jam was "Harvest". The game can played on [itch.io](https://ierkol18.itch.io/our-game).
+**OUR GAME** is a HTML5/Windows game for [Ludum Dare #52](https://ldjam.com/events/ludum-dare/52) (January 2023). It was developed in 48 hours by a team of 4 people. The theme of the game jam was "Harvest". The game can played on [itch.io](https://baris-sinapli.itch.io/ld-52-harvesting) | [Ludum Dare](https://ldjam.com/events/ludum-dare/52/harvesting).
 
 ## Tools & Assets
 
 **Engine:** Unity 2021.3.16f1
 **Programming Language:** C#
 **IDE:** Visual Studio 2022
-**Art:** Aseprite
-**Sound:** sfxr
+**Art:** Procreate, Krita
+**Sound:** Audacity, sfxr
 
 **Assets used in the game:**
 
-* [???](???)
-* [???](???)
+* (SFX) [Pixabay - positive_beeps](https://pixabay.com/sound-effects/positive-beeps-85504/) 
+* (Music) [The 8-bit Jukebox Lite](https://assetstore.unity.com/packages/audio/music/electronic/the-8-bit-jukebox-lite-music-pack-70436)
 
 ## Contributors
 
