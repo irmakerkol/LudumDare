@@ -286,8 +286,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 9090524443353952910, guid: df5baf18adb79469fa0003fb9b681159, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df5baf18adb79469fa0003fb9b681159, type: 3}
 --- !u!1 &1523989942
 GameObject:
