@@ -1,6 +1,5 @@
-# OUR GAME - Ludum Dare #52 Entry
+# HARVESTING... - Ludum Dare #52 Entry
 
-<!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
 ![GitHub repo size](https://img.shields.io/github/repo-size/ierkol18/LudumDare)
 ![Licence](https://img.shields.io/github/license/ierkol18/LudumDare?style=plastic)
 ![GitHub contributors](https://img.shields.io/github/contributors/ierkol18/LudumDare)
