@@ -61,7 +61,8 @@ public class TypingEffect : MonoBehaviour
         if (textPartIndex >= textParts.Length)
         {
             // Start the animation
-            GetComponent<Animation>().Play();
+            //GetComponent<Animation>().Play();
+            //trials scene al
             return;
         }
 
@@ -85,7 +86,8 @@ public class TypingEffect : MonoBehaviour
 
     public void onESC()
     {
-        LevelManager.instance.StartLevel1();
+        //LevelManager.instance.StartLevel1();
+        //trials scene al
         Destroy(gameObject);
     }
 }
