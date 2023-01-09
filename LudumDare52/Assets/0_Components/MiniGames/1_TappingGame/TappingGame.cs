@@ -13,12 +13,12 @@ public class TappingGame : MonoBehaviour
     private bool gameStarted;
     private bool gameOver;
     private int currentTaps;
-    private AudioSource audioSource;
+    //private AudioSource audioSource;
 
     [SerializeField] GameObject dataBeingHarvested;
     [SerializeField] GameObject failedImage;
     [SerializeField] AudioClip failSound;
-
+    [SerializeField] AudioSource audioSource;
     [SerializeField] Sprite[] sprites;
 
     private void Awake()
@@ -27,6 +27,8 @@ public class TappingGame : MonoBehaviour
     }
     public void StartGame()
     {
+        failedImage.SetActive(false);
+
         gameStarted = true;
         gameOver = false;
         currentTaps = 0;

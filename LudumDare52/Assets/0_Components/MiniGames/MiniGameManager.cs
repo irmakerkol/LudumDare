@@ -18,7 +18,8 @@ public class MiniGameManager : MonoBehaviour
     
     private void Start()
     {
-        StartTappingGame();
+        //bu açýktý ben kapattým - sena
+        //StartTappingGame();
     }
 
     //Typing Game
@@ -53,6 +54,36 @@ public class MiniGameManager : MonoBehaviour
     public bool IsButtonTappingGameComplete()
     {
         return tappingGame.IsComplete();
+    }
+
+    public OsuCircleManager osuGame1;
+    [SerializeField] GameObject osuGame1Panel;
+
+    // Start the minigame
+    public void StartOsuGame1()
+    {
+        osuGame1Panel.SetActive(value: true);
+        osuGame1.Init();
+    }
+
+    public OsuCircleManager osuGame2;
+    [SerializeField] GameObject osuGame2Panel;
+
+    // Start the minigame
+    public void StartOsuGame2()
+    {
+        osuGame2Panel.SetActive(value: true);
+        osuGame2.Init();
+    }
+
+    public OsuCircleManager osuGame3;
+    [SerializeField] GameObject osuGame3Panel;
+
+    // Start the minigame
+    public void StartOsuGame3()
+    {
+        osuGame3Panel.SetActive(value: true);
+        osuGame3.Init();
     }
 
 }

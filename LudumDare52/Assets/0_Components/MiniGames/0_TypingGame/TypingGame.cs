@@ -14,11 +14,12 @@ public class TypingGame : MonoBehaviour
     private bool gameStarted;
     private bool gameOver;
     private string currentText;
-    private AudioSource audioSource;
+    //private AudioSource audioSource;
 
     [SerializeField] GameObject dataBeingHarvested;
     [SerializeField] GameObject failedImage;
     [SerializeField] AudioClip failedSound;
+    [SerializeField] AudioSource audioSource;
     [SerializeField] TMPro.TMP_InputField inputField;
 
 

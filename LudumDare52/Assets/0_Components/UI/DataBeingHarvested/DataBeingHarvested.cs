@@ -28,6 +28,7 @@ public class DataBeingHarvested : MonoBehaviour
     public void IncreaseCount(int increaseAmount)
     {
         StartCoroutine(routine: ChangeText(increaseAmount));
+
     }
 
     // Coroutine that changes the text every 2 seconds for count times
@@ -44,8 +45,42 @@ public class DataBeingHarvested : MonoBehaviour
             counterText.text = harvestedDataCounter.ToString();
             audioSource.PlayOneShot(audioSource.clip);
         }
+        switch (LevelManager.instance.completedLevelNumber)
+        {
+            case 1:
+                LevelManager.instance.StartLevel2();
+                break;
 
-        
+            case 2:
+                LevelManager.instance.StartLevel3();
+                break;
+
+            case 3:
+                LevelManager.instance.StartLevel4();
+                break;
+
+            case 4:
+                LevelManager.instance.StartLevel5();
+                break;
+
+            case 5:
+                LevelManager.instance.StartLevel6();
+                break;
+
+            case 6:
+                LevelManager.instance.StartLevel7();
+                break;
+
+            case 7:
+                LevelManager.instance.StartLevel8();
+                break;
+
+            case 8:
+                //finish game
+                Debug.Log("oyunu bitirdin helal");
+                break;
+        }
+        gameObject.SetActive(false);
     }
 
 }
