@@ -1674,13 +1674,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8049176377039003319, guid: f6d90dfcd1ce0874196480883427941f, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 8049176377430896842, guid: f6d90dfcd1ce0874196480883427941f, type: 3}
       propertyPath: m_Name
       value: HardBug_MiniGame_Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8049176377430896842, guid: f6d90dfcd1ce0874196480883427941f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8049176377430896846, guid: f6d90dfcd1ce0874196480883427941f, type: 3}
       propertyPath: m_Pivot.x
@@ -1766,6 +1766,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8049176377430896847, guid: f6d90dfcd1ce0874196480883427941f, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6d90dfcd1ce0874196480883427941f, type: 3}
 --- !u!1 &1499430578 stripped

@@ -474,8 +474,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTag: bug
   deathSound: {fileID: 8300000, guid: e3e66459751132249b40487550c6d11c, type: 3}
-  dataBeingHarvested: {fileID: 0}
-  gameCanvas: {fileID: 0}
+  dataBeingHarvested: {fileID: 5892426788519678625, guid: 7738364670d624f098ebaaebf84ab2ce, type: 3}
+  gameCanvas: {fileID: 8049176377430896842}
 --- !u!82 &8049176377039003317
 AudioSource:
   m_ObjectHideFlags: 0
