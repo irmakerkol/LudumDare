@@ -3,7 +3,11 @@ guid: aae1618ee6f8b425785ffbd9c1bf3399
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - typingGame: {instanceID: 0}
+  - typingGamePanel: {instanceID: 0}
+  - buttonTappingGame: {instanceID: 0}
+  - buttonTappingGamePanel: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

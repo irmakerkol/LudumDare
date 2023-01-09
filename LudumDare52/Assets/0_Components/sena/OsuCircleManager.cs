@@ -6,7 +6,7 @@ public class OsuCircleManager : MonoBehaviour
 {
     public RectTransform[] uiTransforms;
     public float[] times;
-    public GameObject osuCanvas;
+    public GameObject failPanel;
     private RectTransform rt;
 
     float currentTime;
@@ -22,6 +22,12 @@ public class OsuCircleManager : MonoBehaviour
     private void Init()
     {
         Debug.Log("Started");
+        foreach(var transform in uiTransforms)
+        {
+            transform.gameObject.SetActive(false);
+        }
+        failPanel.SetActive(false);
+
         circlePresent = false;
         currentCircle = 0;
         uiTransforms[0].gameObject.SetActive(true);
@@ -57,8 +63,13 @@ public class OsuCircleManager : MonoBehaviour
             uiTransforms[currentCircle].gameObject.SetActive(false);
             Debug.Log("Time up");
             rt.localScale = new Vector3(3, 3, 3);
-            gameObject.SetActive(false);
+            failState();
+            //gameObject.SetActive(false);
 
+        }
+        if(currentCircle == uiTransforms.Length)
+        {
+            winState();
         }
         
     }
@@ -78,11 +89,18 @@ public class OsuCircleManager : MonoBehaviour
 
     public void winState()
     {
-        osuCanvas.SetActive(false);
+        Debug.Log("wine girdi valla");
+        gameObject.SetActive(false);
+        //kazanýnca ne olacak 
     }
 
-    public void restart()
+    public void failState()
     {
-        
+        foreach (var t in uiTransforms)
+        {
+            t.gameObject.SetActive(false);
+        }
+  
+        failPanel.SetActive(true);
     }
 }
