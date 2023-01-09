@@ -10,11 +10,11 @@
 
 ## Tools & Assets
 
-**Engine:** Unity 2021.3.16f1
-**Programming Language:** C#
-**IDE:** Visual Studio 2022
-**Art:** Procreate, Krita
-**Sound:** Audacity, sfxr
+* **Engine:** Unity 2021.3.16f1
+* **Programming Language:** C#
+* **IDE:** Visual Studio 2022
+* **Art:** Procreate, Krita
+* **Sound:** Audacity, sfxr
 
 **Assets used in the game:**
 
