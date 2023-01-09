@@ -8,16 +8,23 @@ public class TappingGame : MonoBehaviour
     public int tapCount;
     public float timeLimit;
     public Timer timer;
+    public int increaseScore = 5;
 
     private bool gameStarted;
     private bool gameOver;
     private int currentTaps;
+    private AudioSource audioSource;
 
     [SerializeField] GameObject dataBeingHarvested;
     [SerializeField] GameObject failedImage;
+    [SerializeField] AudioClip failSound;
 
     [SerializeField] Sprite[] sprites;
-    
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     public void StartGame()
     {
         gameStarted = true;
@@ -33,6 +40,8 @@ public class TappingGame : MonoBehaviour
         gameStarted = false;
         timer.StopTimer();
         dataBeingHarvested.SetActive(true);
+        DataBeingHarvested.instance.harvestedDataCounter++;
+        DataBeingHarvested.instance.IncreaseCount(increaseScore);
         this.gameObject.SetActive(false);
     }
     
@@ -42,6 +51,7 @@ public class TappingGame : MonoBehaviour
         timer.StopTimer();
         dataBeingHarvested.SetActive(false);
         failedImage.SetActive(true);
+        audioSource.PlayOneShot(failSound);
         
         StartCoroutine(routine: SetDisactiveAfterDelay());
     }

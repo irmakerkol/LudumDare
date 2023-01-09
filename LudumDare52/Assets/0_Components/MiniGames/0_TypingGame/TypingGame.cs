@@ -9,12 +9,16 @@ public class TypingGame : MonoBehaviour
     public float timeLimit;
     public TextDisplay textDisplay;
     public Timer timer;
+    public int increaseScore = 5;
+    
     private bool gameStarted;
     private bool gameOver;
     private string currentText;
+    private AudioSource audioSource;
 
     [SerializeField] GameObject dataBeingHarvested;
     [SerializeField] GameObject failedImage;
+    [SerializeField] AudioClip failedSound;
     [SerializeField] TMPro.TMP_InputField inputField;
 
 
@@ -39,7 +43,7 @@ public class TypingGame : MonoBehaviour
         HackButton.Fire_onSetActivity(true);
         dataBeingHarvested.SetActive(false);
         failedImage.SetActive(true);
-        
+        audioSource.PlayOneShot(failedSound);
         StartCoroutine(SetDisactiveAfterDelay());
     }
 
@@ -57,7 +61,7 @@ public class TypingGame : MonoBehaviour
         HackButton.Fire_onSetActivity(false);
         dataBeingHarvested.SetActive(true);
         DataBeingHarvested.instance.harvestedDataCounter ++;
-        DataBeingHarvested.instance.IncreaseCount(5);
+        DataBeingHarvested.instance.IncreaseCount(increaseScore);
         this.gameObject.SetActive(false);
     }
 
